@@ -6,14 +6,18 @@
 #    By: jumurphy <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/02/12 18:58:05 by jumurphy          #+#    #+#              #
-#    Updated: 2016/02/12 18:58:07 by jumurphy         ###   ########.fr        #
+#    Updated: 2016/02/17 16:56:21 by jumurphy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
 NEEDED = ./libft.h
+
 FLAG = -Wall -Wextra -Werror
+
 OPTIONS = -c -I $(NEEDED)
+
 SRC =	ft_bzero.c \
 	ft_isalpha.c \
 	ft_isalnum.c \
@@ -117,11 +121,13 @@ OBJECTS =	ft_bzero.o \
 		ft_tolower.o \
 		ft_toupper.o
 
-all: $(NAME)
+all:
+	$(NAME)
 
 $(NAME):
 	gcc $(FLAG) $(OPTIONS) $(SRC)
 	ar rc $(NAME) $(OBJECTS)
+	ranlib $(NAME)
 
 clean:
 	rm -f $(OBJECTS)

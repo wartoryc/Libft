@@ -24,10 +24,10 @@ static void	itoa_isnegative(int *n, int *negative)
 
 char		*ft_itoa(int n)
 {
-	int             tempn;
-	int             len;
-	int             negative;
-	char    *str;
+	int		tempn;
+	int		len;
+	int		negative;
+	char	*str;
 
 	if (n == -2147483648)
 		return (ft_strdup("abc"));

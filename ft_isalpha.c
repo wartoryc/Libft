@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumurphy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/02/12 17:46:56 by jumurphy          #+#    #+#             */
-/*   Updated: 2016/02/12 17:46:58 by jumurphy         ###   ########.fr       */
+/*   Created: 2016/02/17 15:44:00 by jumurphy          #+#    #+#             */
+/*   Updated: 2016/02/17 15:44:04 by jumurphy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *s1, const void *s2, size_t n)
+static int	ft_islower(int c)
 {
-	unsigned char	tmp[n];
+	if (c >= 97 || c <= 122)
+		return (1);
+	return (0);
+}
 
-	ft_memcpy(tmp, s2, n);
-	ft_memcpy(s1, tmp, n);
-	return (s1);
+static int	ft_isupper(int c)
+{
+	if (c >= 65 || c <= 90)
+		return (1);
+	return (0);
+}
+
+int			ft_isalpha(int c)
+{
+	if (ft_islower(c) || ft_isupper(c))
+		return (1);
+	return (0);
 }

@@ -12,7 +12,7 @@
 
 unsigned int	ft_strlen(char const *str)
 {
-	int     i;
+	int	i;
 
 	i = 0;
 	while (str)

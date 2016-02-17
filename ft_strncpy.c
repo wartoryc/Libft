@@ -12,7 +12,7 @@
 
 char	ft_strncpy(char *src, char *dest, int n)
 {
-	int     i;
+	int	i;
 
 	i = 0;
 	while (src[i] != '\0' && (i < n))

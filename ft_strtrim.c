@@ -16,9 +16,9 @@
 
 static size_t	ft_trimlen(char *s)
 {
-	size_t  i;
-	size_t  spaces;
-	size_t  len;
+	size_t	i;
+	size_t	spaces;
+	size_t	len;
 
 	len = ft_strlen(s);
 	i = 0;
@@ -39,10 +39,10 @@ static size_t	ft_trimlen(char *s)
 
 char			*ft_strtrim(char const *s)
 {
-	char    *str;
-	size_t  i;
-	size_t  j;
-	size_t  trim_len;
+	char	*str;
+	size_t	i;
+	size_t	j;
+	size_t	trim_len;
 
 	i = 0;
 	j = 0;

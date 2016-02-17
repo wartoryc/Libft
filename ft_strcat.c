@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	char    *cut1;
-	char    *cut2;
+	char	*cut1;
+	char	*cut2;
 
 	cut1 = s1;
 	cut2 = (char *)s2;

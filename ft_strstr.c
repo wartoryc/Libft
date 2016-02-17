@@ -14,7 +14,7 @@
 
 char	*ft_strstr(const char *s1, const char *s2)
 {
-	int     i;
+	int	i;
 
 	if (*s2 == '\0')
 		return ((char *)s1);

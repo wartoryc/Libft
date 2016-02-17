@@ -12,7 +12,7 @@
 
 char	ft_strcpy(char *src, char *dest)
 {
-	int     i;
+	int	i;
 
 	i = 0;
 	while (src[i])

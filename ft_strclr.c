@@ -12,7 +12,7 @@
 
 void	ft_strclr(char *s)
 {
-	int     i;
+	int	i;
 
 	if (*s)
 	{
@@ -22,5 +22,5 @@ void	ft_strclr(char *s)
 			s[i] = 0;
 			i++;
 		}
-	 }
+	}
 }

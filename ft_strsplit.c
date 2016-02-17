@@ -14,8 +14,8 @@
 
 static size_t	count_w(char const *s, char c)
 {
-	size_t          i;
-	size_t          j;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
 	j = 0;
@@ -36,9 +36,9 @@ static size_t	count_w(char const *s, char c)
 
 static char		*add_w(size_t *i, char const *s, char c)
 {
-	size_t          size;
-	size_t          j;
-	char            *word;
+	size_t		size;
+	size_t		j;
+	char		*word;
 
 	size = *i;
 	j = 0;
@@ -60,10 +60,10 @@ static char		*add_w(size_t *i, char const *s, char c)
 
 char			**ft_strsplit(char const *s, char c)
 {
-	char            **tab;
-	size_t          o;
-	size_t          *i;
-	size_t          j;
+	char		**tab;
+	size_t		o;
+	size_t		*i;
+	size_t		j;
 
 	o = 0;
 	i = &o;
