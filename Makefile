@@ -121,8 +121,7 @@ OBJECTS =	ft_bzero.o \
 		ft_tolower.o \
 		ft_toupper.o
 
-all:
-	$(NAME)
+all:	$(NAME)
 
 $(NAME):
 	gcc $(FLAG) $(OPTIONS) $(SRC)
